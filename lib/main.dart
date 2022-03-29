@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:liftr/screens/home.dart';
+import 'package:liftr/screens/login.dart';
 import 'package:liftr/screens/workout.dart';
 import 'package:liftr/state/main_model.dart';
 import 'package:scoped_model/scoped_model.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const Liftr());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class Liftr extends StatelessWidget {
+  const Liftr({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
@@ -32,6 +33,11 @@ class MyApp extends StatelessWidget {
             case WorkoutScreen.route:
               return MaterialPageRoute(
                 builder: (context) => const WorkoutScreen(),
+              );
+            // Workout Screen
+            case LoginScreen.route:
+              return MaterialPageRoute(
+                builder: (context) => const LoginScreen(),
               );
             default:
               return MaterialPageRoute(

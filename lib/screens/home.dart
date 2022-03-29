@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:liftr/screens/login.dart';
 import 'package:liftr/screens/workout.dart';
 
 class HomeScreen extends StatelessWidget {
